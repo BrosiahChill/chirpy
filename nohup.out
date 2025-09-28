@@ -1,0 +1,10 @@
+# command-line-arguments
+./main.go:4:2: "fmt" imported and not used
+./main.go:23:29: apiCfg.middlewareMetricsInc undefined (type apiConfig has no field or method middlewareMetricsInc)
+./main.go:24:37: undefined: handlerReadiness
+./main.go:25:44: apiCfg.handlerMetrics undefined (type apiConfig has no field or method handlerMetrics)
+./main.go:26:43: apiCfg.handlerReset undefined (type apiConfig has no field or method handlerReset)
+# chirpy
+./main.go:4:2: "fmt" imported and not used
+# chirpy
+./main.go:4:2: "fmt" imported and not used
