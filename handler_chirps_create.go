@@ -4,10 +4,10 @@ import (
 	"chirpy/internal/database"
 	"encoding/json"
 	"errors"
+	"github.com/google/uuid"
 	"net/http"
 	"strings"
 	"time"
-	"github.com/google/uuid"
 )
 
 type Chirp struct {
