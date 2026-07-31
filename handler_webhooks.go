@@ -16,7 +16,7 @@ func (cfg *apiConfig) handlerWebhook(w http.ResponseWriter, r *http.Request) {
 			UserID uuid.UUID `json:"user_id"`
 		}
 	}
-	
+
 	apiKey, err := auth.GetAPIKey(r.Header)
 	if err != nil {
 		respondWithError(w, http.StatusUnauthorized, "Cannot access api key", err)
@@ -39,7 +39,6 @@ func (cfg *apiConfig) handlerWebhook(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusNoContent)
 		return
 	}
-
 
 	_, err = cfg.db.UpgradeToChirpyRed(r.Context(), params.Data.UserID)
 	if err != nil {
